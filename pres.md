@@ -23,7 +23,7 @@ theme:
 Radi se o običnom packeru:
 
 ---------------         	 -------    
-**Ime:**                      PE-Pack 
+**Ime:**                      PE-Pack
 **Autor:**                    ANAKiN  
 **Verzija:**                  1.0     
 **Godina proizvodnje:**       1998    
@@ -79,6 +79,28 @@ Informacije o packeru:
 - skok na entry point ostvaren je naredbom `JMP EAX`, u registru `EAX` pohranjena je adresa ulazne točke
 - koji se algoritam koristi nisam skuzio jos
 
+# Dinamička analiza
+
+## Kategorizacija prema funkcionalnosti
+
+- S obzirom na povezivanje na internet i pristup datotekama
+riječ je o trojanu
+
+
+## Povezivanje na internet
+
+- U petlji se pokušava pristupiti adresi zzxx9508.codns.com, međutim zbog načina rada bez pristupa mreži konekcija se nikad ne ostvari
+- WSAECONNREFUSED
+- GetHostName: dodatan podatak - jane_f2070126d8
+
+## Protokol
+
+## Podaci koji se šalju
+
+## Rad s datotekama
+
+- Pokušava stvoriti ext.dat datoteku
+- Stvara ALYac.exe datoteke u C:
 
 
 # Section 2
